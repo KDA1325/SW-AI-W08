@@ -18,7 +18,6 @@
 ```text
 echo/
 ├── Makefile
-├── README
 ├── README.md
 ├── csapp.c
 ├── csapp.h
