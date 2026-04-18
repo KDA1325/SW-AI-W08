@@ -12,5 +12,8 @@ RUN echo "jungle ALL=(ALL) NOPASSWD:ALL" > /etc/sudoers.d/jungle
 # 암호 설정
 # RUN echo 'jungle:jungle' | chpasswd
 
+RUN mkdir -p /home/jungle/.vscode-server /home/jungle/.codex/skills \
+    && chown -R jungle:jungle /home/jungle
+
 USER jungle
 WORKDIR /home/jungle
